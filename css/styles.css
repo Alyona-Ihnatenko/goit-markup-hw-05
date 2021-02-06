@@ -424,9 +424,42 @@ fill: var(--link-color);
   display: flex;
   flex-wrap: wrap;
 }
-.about-us-list-item {
+.about-us-list-item { 
+  position: relative;
+
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.about-us-img{
+  position: relative;
+}
+.product-label{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display:block;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 27px;
+}
+.label-text{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight:700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+ 
+color: var(--background-color);
+
+
+
 }
 .our-team-img-descr {
   padding: 30px 32px;
@@ -636,7 +669,8 @@ fill: var(--link-color);
   /* margin-left: auto;
   margin-right: auto;*/
   padding: 6.1px 22.5px;
-  border-color: var(--our-tem-color);
+  border-color: transparent;
+  border-radius: 4px;
   
   /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);*/
@@ -769,6 +803,9 @@ fill: var(--link-color);
   box-sizing: border-box;
   border-radius: 50%;
   padding: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-close{
@@ -776,7 +813,5 @@ fill: var(--link-color);
   fill:currentColor;
   height: 11px;
   width: 11px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+ 
 }
