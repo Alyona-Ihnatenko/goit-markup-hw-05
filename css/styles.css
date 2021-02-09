@@ -648,7 +648,7 @@ color: var(--background-color);
    width: 100%;
    height: 100%;
    border: solid 1px var(--icon-color);
-   transition: color var(--duration)var(--cubic) border-color var(--duration) var(--cubic);
+   transition: color var(--duration)var(--cubic), border-color var(--duration) var(--cubic);
   }
   
 .our-clients-link:hover,
@@ -732,7 +732,7 @@ color: var(--background-color);
   line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  transition: color var(--duration) var(--cubic), background-color --var(--duration)  var(--cubic), box-shadow var(--duration) var(--cubic);
+  transition: color var(--duration) var(--cubic),background-color var(--duration)  var(--cubic), box-shadow var(--duration) var(--cubic);
 
 }
 
