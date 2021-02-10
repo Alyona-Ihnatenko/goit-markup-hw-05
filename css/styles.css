@@ -420,13 +420,13 @@ align-items: baseline;
 }
 
 .icon-clock::before {
-  background-image:url(../images/hw4/clock\ 1.png);
+  background-image:url(../images/hw4/clock.png);
 }
 .icon-diagram::before {
-  background-image: url(../images/hw4/diagram\ 1.png);
+  background-image: url(../images/hw4/diagram.png);
 }
 .icon-astronaut::before {
-  background-image: url(../images/hw4/astronaut\ 1.png);
+  background-image: url(../images/hw4/astronaut.png);
 }
 /*=============End Hero Index=============*/
 
