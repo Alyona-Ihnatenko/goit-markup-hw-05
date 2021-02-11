@@ -198,8 +198,12 @@ img {
   color: var(--link-color);
 }
 
-.auth-nav-item:hover > svg,
-.auth-nav-item:focus> svg{
+.mail-link:hover > svg,
+.mail-link:focus> svg{
+fill: var(--link-color);
+}
+.tel-link:hover > svg,
+.tel-link:focus> svg{
 fill: var(--link-color);
 }
 .contacts-icon{
@@ -209,7 +213,8 @@ fill: var(--link-color);
   margin-right: 10px;
 }
 
-.auth-nav-item{
+.tel-link,
+.mail-link{
   display:flex;
   transition: fill,var(--duration), var(--cubic);
 }
@@ -222,7 +227,7 @@ fill: var(--link-color);
 /*===========Footer==============*/
 .footer .container {
   display: flex;
-align-items: baseline;
+ align-items: baseline;
 }
 .footer {
   padding-top: 60px;
@@ -249,6 +254,7 @@ align-items: baseline;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color var(--duration) var(--cubic);
 }
 .address-list-item-link-tel:hover,
 .address-list-item-link-mail:hover,
@@ -259,6 +265,13 @@ align-items: baseline;
 .footer-title{
   color: var(--background-color);
   margin-bottom: 20px;
+ font-family:var(--text-font);
+ font-style: normal;
+ font-weight: 700;
+ font-size: 14px;
+ line-height:1.143;
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
 }
 .footer-icons{
   margin-left: 70px;
@@ -338,6 +351,7 @@ align-items: baseline;
   font-size: 16px;
   line-height: 1.875;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   background-color: var(--link-color);
   color: var(--background-color);
   transition-property: color; 
@@ -346,7 +360,9 @@ align-items: baseline;
   cursor: pointer;
 
 }
-
+.hero-btn{
+  border: none;
+}
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--link-color);
@@ -763,14 +779,14 @@ color: var(--background-color);
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.projects-text-hover {
+/*.projects-text-hover {
   font-family: var(--text-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.555;
   letter-spacing: 0.03em;
   color: var(--text-color-accent);
-}
+}*/
 .projects .container {
   display: flex;
   display: block;
@@ -799,13 +815,18 @@ color: var(--background-color);
   background: var(--background-color);
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
-  transition: box-shadow var(--duration) var(--cubic);
+  
 }
-.projects-list-item:hover,
-.projects-list-item:focus{
+.project-link{
+  display: block;
+  transition:box-shadow var(--duration) var(--cubic);
+}
+.project-link:hover,
+.project-link:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
+
 .project-thumb{
   position: relative;
   overflow: hidden;
