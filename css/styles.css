@@ -64,6 +64,7 @@ img {
 .header .container {
   display: flex;
   border-bottom: 1px solid #ECECEC;
+  width: 1600px;
 }
 
 /*==========Logotype========*/
@@ -208,8 +209,7 @@ fill: var(--link-color);
 }
 .contacts-icon{
   fill: var(--accent-color);
-  width: 16px;
-  height: 12px;
+ 
   margin-right: 10px;
 }
 
@@ -382,7 +382,6 @@ fill: var(--link-color);
 
 .hero-list-item-title {
   /* width: 270px;*/
-  margin-bottom: 10px;
   margin-top: 30px;
   font-family: var(--text-font);
   font-weight: 700;
@@ -403,6 +402,7 @@ fill: var(--link-color);
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-top: 10px;
 }
 .hero-list-item-text:not(:last-child) {
   margin-bottom: 30px;
@@ -851,7 +851,7 @@ color: var(--background-color);
 
 }
 .project-link:hover .project-overlay,
-.projects-lnk:focus .project-overlay{
+.project-link:focus .project-overlay{
 transform: translateY(0%);
 } 
 
